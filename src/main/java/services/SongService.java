@@ -8,15 +8,12 @@ import javax.ws.rs.*;
 @Path("/songs")
 @Consumes({ "application/json" })
 @Produces({ "application/json" })
-public class SongService {
-
-    private SongRepository songRepository = new SongRepository();
+public interface SongService {
 
     @GET
     @Path("/{id}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    public Song getSongById(@PathParam("id") String id) {
-        return songRepository.getSongById(id);
-    }
+    public Song getSongById(@PathParam("id") String id);
+
 }
