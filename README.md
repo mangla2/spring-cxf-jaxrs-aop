@@ -1,5 +1,9 @@
-# Related Article
-* https://medium.com/geekculture/creating-jax-rs-restful-apis-with-apache-cxf-and-tomcat-c3e13f3b65c4
+Use tomcat to build the app
+Add the web.xml artifact as deployment descriptor
 
-# CXF-JAXRS
-* Creating a RESTful JAX-RS API using Apache CXF
+Try the below cURL:
+
+```
+curl --location 'http://localhost:8080/sample-app/songs/2'
+```
+
